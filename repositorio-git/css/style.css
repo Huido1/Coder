@@ -1,0 +1,282 @@
+/*Primero voy a importar un estilo de fuente para linkearlo*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Aplico letra importada y protocolos de tamaño de letra tal visto en clase*/
+html {
+    font-family: "quicksand", sans-serif;
+    font-size: 62.5%;
+}
+
+/*Color y tamaño de titulos y parrafo*/
+h1 {
+    font-size: 3.5rem;
+    color: rgb(255, 21, 185); /* La idea es que el titulo tenga un rosa mas fuerte para combinar con el fondo*/
+}
+
+h2{
+    font-size: 2.5rem;
+    color: rgb(255, 21, 185);
+}
+
+p {
+    font-size: 1.5rem;
+    color: #7a1bb9;
+}
+
+.productos ul{
+    list-style-type: none;
+    color: #7a1bb9;
+    font-size: 1.5rem;
+}
+
+footer p{
+    color: white;
+    font-size: 2 rem;
+}
+
+form {
+    color: #7a1bb9;
+    font-size: 1.5rem;
+}
+
+/* Tamaños de imagen footer y div*/
+
+header {
+    text-align: center;
+}
+
+
+header img {
+    width: 150px;
+    border: 5px solid blue;
+    height: auto;
+    display: inline-block;
+}
+
+
+footer img {
+    width: 50px;
+}
+
+/*FOrmato de listas nav y footer*/
+
+header ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.wrapper{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    padding: 10px;
+    margin: 0px;
+}
+
+.menu-superior a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*Formato de color con rosados que contrasten a pedido de la creadora del emprendimiento, agregado de texto al centro para visual*/ 
+
+header, footer {
+    background-color: #c76fcd;
+}
+
+/* Voy a trabajar el body */
+
+body {
+    background-color: #fd9ff9;
+    text-align: center;
+}
+
+.parrafo-inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px
+}
+
+.parrafo-inicio p {
+    max-width: 60%;
+}
+
+.foto1-index {
+    margin: 10px;
+}
+
+.foto2-index {
+    margin-bottom: 50px;
+}
+
+.lanzamientos-index {
+    text-align: center;
+}
+
+.lanzamientos-index h2 {
+    margin-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+}
+
+.grid-container .hades-pegasus {
+    padding: 15px;
+    text-align: center;
+}
+
+.grid-container .hades-pegasus img {
+    width: 300px;
+    
+}
+
+.grid-container .hera-llama {
+    padding: 15px;
+    text-align: center;
+}
+
+.grid-container .hera-llama img {
+    width: 300px;
+}
+
+.grid-container .kore-mulita {
+    padding: 15px;
+    text-align: center;
+}
+
+.grid-container .kore-mulita img {
+    width: 300px;
+}
+
+.mulita-secrets {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.mulita-secrets h2 {
+    margin-bottom: 20px;
+}
+
+.secret-container {
+    display: grid;
+    grid-template-areas:
+        "hera hera kore kore"
+        "hades hades ares ares";
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 80%;
+    margin: 0 auto
+}
+
+.set-hera {
+    grid-area: hera;
+}
+
+.set-kore {
+    grid-area: kore;
+}
+
+.set-hades {
+    grid-area: hades;
+}
+
+.set-ares {
+    grid-area: ares;
+}
+
+.set-hera, .set-kore, .set-hades, .set-ares {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.set-ares img, .set-hades img, .set-hera img, .set-kore img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.set-hera img:hover,
+.set-kore img:hover,
+.set-hades img:hover,
+.set-ares img:hover {
+    transform: scale(1.05); 
+}
+
+
+
+
+
+
+.arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.arriba .redes{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.arriba .redes ul {
+    display: flex
+}
+
+.arriba p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.abajo p {
+    display: flex;
+    font-size: 2rem;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.listas-formulario {
+    display: inline-block;
+}
+
+
+
